@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message d'Anniversaire 🎂</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/endmessage.css" />
+  </head>
+  <body>
+    <div id="page4">
+      <div class="message-container">
+        <div id="tof">
+          <img src="./medias/tof_4.jpg" alt="Souvenir 4"  height="800px"/>
+        </div>
+        <h2 class="message-question">Lire ton message d'anniversaire ? 🎁</h2>
+        <div class="message-btn-group">
+          <button class="message-btn message-btn-yes" onclick="showPoem()">
+            OUI
+          </button>
+          <button
+            class="message-btn message-btn-no"
+            onclick="dodgeNo(event, 'message')"
+          >
+            Non
+          </button>
+        </div>
+
+        <div class="poem-container" id="poemContainer">
+          <h2>Pour toi, Anne Emma 🎂✨</h2>
+          <div class="poem-text">
+            <p>
+              Aujourd'hui c'est ton jour, le ciel a mis ses habits,<br />
+              Le soleil s'est levé rien que pour toi, ma chérie.<br />
+              Anne Emma, tu illumines chaque endroit où tu passes,<br />
+              Et le monde est plus beau depuis que tu y as ta place.
+            </p>
+
+            <p>
+              Tu mérites des confettis, des rires et de la joie,<br />
+              Des gâteaux trop sucrés et des bras ouverts pour toi.<br />
+              Ton sourire est un cadeau que personne ne peut acheter,<br />
+            </p>
+
+            <p>
+              Que cette nouvelle année t'apporte tout ce que tu veux,<br />
+              Des aventures, des fous rires, des moments précieux.<br />
+              Que chaque rêve que tu portes trouve enfin son chemin,<br />
+              Et que la vie te gâte autant que tu le mérites bien.
+            </p>
+
+            <p>
+              Alors souffle les bougies, fais un vœu et souris,<br />
+              Car aujourd'hui c'est ta fête et tu es la plus jolie. 🎉<br />
+              Joyeux anniversaire Anne Emma, mon cœur est plein de toi,<br />
+              Je t'admire infiniment, plus que tu ne le crois. 💖🎂
+            </p>
+          </div>
+        </div>
+
+        <div id="finalQuestionContainer" class="hidden">
+          <h2 class="final-question">
+            Est-ce que ce petit cadeau d'anniversaire t'a plu ? 🎁
+          </h2>
+          <div class="final-btn-group">
+            <button class="message-btn message-btn-yes" onclick="celebrate()">
+              OUI !
+            </button>
+            <button
+              class="message-btn message-btn-no"
+              onclick="dodgeNo(event, 'final')"
+            >
+              Non
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hearts animation container -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
